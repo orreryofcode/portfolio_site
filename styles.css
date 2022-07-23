@@ -21,13 +21,19 @@
 
 .navbar-desktop-menu {
   display: flex;
+  justify-content: center;
   list-style: none;
+}
+
+.navbar-desktop-menu > li {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-desktop-menu > li > a {
   color: white;
   text-decoration: none;
-  margin-left: 50px;
+  padding: 0px 20px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -68,8 +74,17 @@ h2 {
 .tools-container {
   padding: 10px 250px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #d9d9d9;
+}
+
+#html-icon,
+#css-icon,
+#js-icon,
+#node-icon,
+#react-icon {
+  color: #151515;
 }
 
 .tools-container h3 {
@@ -126,20 +141,25 @@ h2 {
 
 .about-img {
   background-color: #151515;
-  width: 300px;
+  min-width: 300px;
   height: 300px;
 }
 
 .about-content {
   height: 300px;
+  min-width: 300px;
   background-color: #151515;
+  color: #d9d9d9;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  padding: 10px 20px;
 }
 
 .contact {
   padding: 30px 500px;
   min-height: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #151515;
 }
 
@@ -152,7 +172,7 @@ h2 {
 .contact-msg h3 {
   color: #fff;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .contact-msg p {
@@ -179,9 +199,11 @@ h2 {
 }
 
 .contact-form {
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   border: none;
+  margin-left: 200px;
 }
 
 .contact-form label {
@@ -220,7 +242,9 @@ textarea[placeholder] {
 
 .contact-btn:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #d9d9d9;
+  color: #151515;
+  transition: 0.2s;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,90 @@
+<%- include('./partials/homeHeader') -%>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/">
+        <img id="navlogo" src="./imgs/logo-wt.png" alt="" />
+      </a>
+      <ul class="navbar-desktop-menu">
+        <li>
+          <a href="#works">Works</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header/Hero Section -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="container">
+        <img id="header-img" src="./imgs/name-wt.png" alt="" />
+        <h2>Welcome to my corner of the web.</h2>
+        <h2>Stay awhile and listen.</h2>
+        <button id="resume">Resume</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tools -->
+  <section id="tools">
+    <div class="tools-container">
+      <h3>Tools of the trade:</h3>
+      <i class="fa-brands fa-4x fa-html5" id="html-icon"></i>
+      <i class="fa-brands fa-4x fa-css3-alt" id="css-icon"></i>
+      <i class="fa-brands fa-4x fa-js" id="js-icon"></i>
+      <i class="fa-brands fa-4x fa-node" id="node-icon"></i>
+      <i class="fa-brands fa-4x fa-react" id="react-icon"></i>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works">
+    <div class="works-container">
+      <h3 id="works-label">works</h3>
+
+      <div class="works">1</div>
+      <div class="works">2</div>
+      <div class="works">3</div>
+      <div class="works">4</div>
+      <!-- <div class="works">5</div> -->
+    </div>
+  </section>
+
+  <!-- About -->
+
+  <section id="about">
+    <div class="about-container">
+      <h3 id="about-label">about</h3>
+      <div class="about-img">1</div>
+      <div class="about-content">
+        My name is Raul Menendez. I am a frontend developer who enjoys creating
+        beautiful and responsive web pages and web apps. I have over one year of
+        experience with various tools such as:<br />
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Javascript/ES6</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB/Mongoose</li>
+          <li>ReactJS</li>
+        </ul>
+        When I am not coding, I like to spend my time with video games, my
+        guitar or my dog. If you would like to learn a little bit more about
+        these hobbies, feel free to check out my <a href="/blog">blog</a>.
+      </div>
+    </div>
+  </section>
+
+  <%- include("./partials/footer")-%>
+</body>

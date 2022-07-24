@@ -1,0 +1,37 @@
+<%-include("./partials/blogHeader.ejs") -%>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/">
+          <img id="navlogo" src="./imgs/logo-wt.png" alt="" />
+        </a>
+        <ul class="navbar-desktop-menu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Blog info -->
+    <section id="blog">
+      <div class="blog-container">
+        <h1>Blog</h1>
+        <div class="blog-content">
+          <% blogContent.forEach((entry)=>{ %>
+          <div class="blog-entry">
+            <h2><%=entry.title%></h2>
+            <p><%=entry.body%> <a href="/blog/<%=entry.title%>">Read More</a> </p>
+          </div>
+
+          <%})%>
+        </div>
+      </div>
+    </section>
+    <%- include('./partials/footer') -%>
+  </body>
+</html>

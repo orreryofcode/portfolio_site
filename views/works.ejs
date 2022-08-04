@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/worksStylesheet.css" />
+    <title>Raul Menendez | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/logo-wt.png" />
+  </head>
+</html>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/">
+        <img id="navlogo" src="./imgs/logo-wt.png" alt="" />
+      </a>
+      <ul class="navbar-desktop-menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#works">Works</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="works">
+    <div class="works-container">
+      <div class="works-heading">
+        <h1 id="works-label">works</h1>
+      </div>
+      <div class="works-body">
+        <p>The cards below are some of the recent projects I have worked on.</p>
+      </div>
+
+      <div class="works-card-wrapper">
+        <div class="work-container">
+          <h2>Tekken 7 Iron Fist Companion</h2>
+          <div class="works ifc"></div>
+          <p>
+            A web application for the game Tekken 7 that is designed to provide
+            the community of players with useful information such as frame data,
+            character notes and notable players of each character. This is a
+            passion project that I am building on my own. It is built with React
+            and I am using Tailwind CSS and DaisyUI to assist in some of the
+            styling.
+          </p>
+          <a href="https://github.com/orreryofcode/iron-fist-companion"
+            >Github Repository</a
+          >
+        </div>
+
+        <div class="works">2</div>
+        <div class="works">3</div>
+        <div class="works">4</div>
+        <!-- <div class="works">5</div> -->
+      </div>
+    </div>
+  </section>
+  <%- include('./partials/footer') -%>
+</body>

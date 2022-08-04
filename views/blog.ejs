@@ -11,7 +11,10 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/works">Works</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
           </li>
         </ul>
       </div>
@@ -25,7 +28,12 @@
           <% blogContent.forEach((entry)=>{ %>
           <div class="blog-entry">
             <h2><%=entry.title%></h2>
-            <p><%=entry.body%> <a href="/blog/<%=entry.title%>">Read More</a> </p>
+            <p>
+              
+              
+              <%=entry.body[0].substring(0,99)%>...
+              <a href="/blog/<%=entry.title%>">Read More</a> 
+            </p>
           </div>
 
           <%})%>

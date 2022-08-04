@@ -33,7 +33,9 @@
         <h1><%= title%></h1>
         <div class="blog-post-content">
             <div class="blog-post-entry">
-                <p><%= body%></p>
+                <% body.forEach((entry)=>{ %>
+                          <p><%=entry%></p><br>
+               <% })%>
             </div>
             <a href="/blog">Back to Blog</a>        
         </div>

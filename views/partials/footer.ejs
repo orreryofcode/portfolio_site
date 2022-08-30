@@ -19,13 +19,11 @@
         </div>
       </div>
 
-      <form action="#" class="contact-form">
+      <form action="mailto: orreryofcode@gmail.com" class="contact-form" method="get">
         <label for="name">Name: </label>
-        <input type="text" id="name" />
-        <label for="email">Email: </label>
-        <input type="text" id="email" />
+        <input type="text" id="name" required/>
         <label for="subject">Subject: </label>
-        <input type="text" id="subject" />
+        <input type="text" id="subject" required/>
         <label for="body">Message: </label>
         <textarea
           name="body"
@@ -33,6 +31,7 @@
           cols="30"
           rows="10"
           placeholder="Hey Raul!"
+          required
         ></textarea>
 
         <button type="submit" class="contact-btn">Send</button>

@@ -106,7 +106,7 @@ a:visited {
 }
 
 .contact {
-  padding: 1.875rem 100px;
+  padding: 1.875rem 80px;
   min-height: 25rem;
   display: flex;
   justify-content: center;
@@ -117,8 +117,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* height: 400px; */
-  width: 50%;
 }
 
 .contact-msg h3 {
@@ -152,11 +150,9 @@ a:visited {
 }
 
 .contact-form {
-  width: 50%;
   display: flex;
   flex-direction: column;
   border: none;
-  margin-left: 12.5rem;
 }
 
 .contact-form label {
@@ -200,21 +196,84 @@ textarea[placeholder] {
   transition: 0.2s;
 }
 
-@media (max-width: 768px) {
-  .header-inner .container {
-    padding: 50px 80px;
+@media (max-width: 820px) {
+  .navbar .container {
+    padding: 20px 50px;
+  }
+
+  .contact {
+    padding: 1.875rem 30px;
+    flex-direction: column;
+  }
+
+  .contact-msg h3 {
+    font-size: 3rem;
+  }
+
+  .fa-brands {
+    width: 50px;
+    height: 50px;
+  }
+
+  #contact-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar .container {
+    padding: 20px 30px;
+  }
+
+  .navbar-desktop-menu > li > a {
+    font-size: 1rem;
+  }
+
+  .works-container {
+    padding: 50px 30px;
+  }
+
+  .works-card-wrapper {
+    padding: 0px;
+  }
+
+  .works-body {
+    font-size: 1rem;
     text-align: center;
   }
 
-  h2 {
-    color: white;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+  .work-container p {
+    font-size: 0.8rem;
   }
 
-  #header-img {
-    padding-top: 5%;
-    max-width: 550px;
+  .work-container a {
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    padding: 30px 30px;
+    flex-direction: column;
+  }
+
+  .contact-msg {
+    align-items: center;
+  }
+
+  .contact-msg p {
+    display: block;
+    width: 100%;
+  }
+
+  .contact-msg h3 {
+    font-size: 3rem;
+  }
+
+  .fa-brands {
+    width: 50px;
+    height: 50px;
+  }
+
+  #contact-logo {
+    display: none;
   }
 }

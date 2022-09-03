@@ -20,3 +20,5 @@ app.get("/works", (req, res) => {
 app.listen(PORT || 3000, () => {
   console.log("Server started");
 });
+
+module.exports = app

@@ -48,7 +48,7 @@
             and I am using Tailwind CSS and DaisyUI to assist in some of the
             styling.
           </p>
-          <a
+          <a rel="noopener"
             href="https://github.com/orreryofcode/iron-fist-companion"
             target="_blank"
             >Github Repository</a
@@ -66,7 +66,7 @@
             backend solution uses Google's Firebase as this was something that I
             was interested in learning at the time.
           </p>
-          <a
+          <a rel="noopener"
             href="https://github.com/orreryofcode/housing-market-proj"
             target="_blank"
             >Github Repository</a
@@ -82,7 +82,7 @@
             design was created in Figma and the actual website was created using
             HTML, CSS and vanilla JS.
           </p>
-          <a
+          <a rel="noopener"
             href="https://github.com/orreryofcode/foodrush-mock-website"
             target="_blank"
             >Github Repository</a
@@ -100,14 +100,59 @@
             MongoDB/Mongoose and also features basic user verification using
             JSON Web Token and BCrypt.
           </p>
-          <a
-            href="https://github.com/orreryofcode/mern-tickets-app"
-            target="_blank"
-            >Github Repository</a
-          >
+          <a rel="noopener" href="https://github.com/orreryofcode/mern-tickets-app" target="_blank">Github Repository</a>
         </div>
       </div>
     </div>
   </section>
-  <%- include('./partials/footer') -%>
+
+   <!-- Contact -->
+   <section id="contact">
+    <div class="contact">
+      <div class="contact-msg">
+        <h3>Contact Me</h3>
+        <p>
+          Would you like to hire me? <br />Shoot me a message and let's get
+          started on realizing your next project!
+        </p>
+
+        <div class="icons">
+          <img id="contact-logo" src="./imgs/logo-wt.png" alt="" />
+          <a
+            href="https://github.com/orreryofcode"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-github fa-4x"></i
+          ></a>
+        </div>
+      </div>
+
+      <form action="mailto: orreryofcode@gmail.com" class="contact-form" method="post" enctype="text/plain">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required/>
+        <label for="subject">Subject: </label>
+        <input type="text" id="subject" name="subject" required/>
+        <label for="body">Message: </label>
+        <textarea
+          name="body"
+          id="body"
+          cols="30"
+          rows="10"
+          placeholder="Hey Raul!"
+          required
+        ></textarea>
+
+        <button type="submit" class="contact-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script
+    src="https://kit.fontawesome.com/81245feb4c.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./app.js"></script>
 </body>
+</html>
+
+

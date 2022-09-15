@@ -179,6 +179,10 @@ p {
   margin-top: 50px;
 }
 
+#email {
+  text-decoration: underline;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
